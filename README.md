@@ -60,7 +60,7 @@ python val.py -p bdd100k -c 3 -w weights/hybridnets.pth --num_gpus 1
 ```
 
 
-<br/>
+****  
 
 
 <div align="center">
