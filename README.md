@@ -1,4 +1,66 @@
-# HybridNets: End2End Perception Network
+
+# Tail Quality - (HybridNets: End2End Perception Network)
+
+0. Setting Up Environment
+```
+apt-get install git unzip ffmpeg libsm6 libxext6 -y
+```
+
+```
+conda create -n TQ-HybridNets python=3.10
+```
+
+```
+conda activate TQ-HybridNets
+```
+
+```
+pip install --upgrade --no-cache-dir gdown albumentations opencv-python
+```
+
+Install PyTorch
+```
+conda install pytorch==2.1.1 torchvision==0.16.1 torchaudio==2.1.1 pytorch-cuda=11.8 -c pytorch -c nvidia
+```
+
+```
+pip install timm==0.5.4 torchshow
+```
+
+1. Get Datasets
+```
+wget https://huggingface.co/datasets/AIJasonYoung/TQ-BDD100K-HybridNets/resolve/main/datasets.zip
+```
+
+
+2. Get TQ-HybridNets
+
+```
+git clone https://github.com/Jason-Young-AI/TQ-HybridNets.git
+```
+
+```
+cd TQ-HybridNets
+```
+
+
+3. Get Weights of HybridNets
+```
+mkdir weights
+```
+
+```
+curl -L -o weights/hybridnets.pth https://github.com/datvuthanh/HybridNets/releases/download/v1.0/hybridnets.pth
+```
+
+4. Evaluation
+
+```
+python val.py -p bdd100k -c 3 -w weights/hybridnets.pth --num_gpus 1
+```
+
+
+<br/>
 
 
 <div align="center">
