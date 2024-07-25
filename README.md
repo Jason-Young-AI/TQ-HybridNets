@@ -27,6 +27,10 @@ conda install pytorch==2.1.1 torchvision==0.16.1 torchaudio==2.1.1 pytorch-cuda=
 pip install timm==0.5.4 torchshow
 ```
 
+```
+pip install -r requirements.txt
+```
+
 1. Get Datasets
 ```
 wget https://huggingface.co/datasets/AIJasonYoung/TQ-BDD100K-HybridNets/resolve/main/datasets.zip
