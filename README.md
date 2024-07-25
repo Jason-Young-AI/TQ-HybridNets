@@ -32,6 +32,9 @@ pip install timm==0.5.4 torchshow
 wget https://huggingface.co/datasets/AIJasonYoung/TQ-BDD100K-HybridNets/resolve/main/datasets.zip
 ```
 
+```
+unzip datasets.zip
+```
 
 2. Get TQ-HybridNets
 
