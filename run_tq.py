@@ -132,7 +132,7 @@ def check_fit_dynamic(fit_distribution_models, fit_distribution_model, all_times
     return numpy.sqrt(avg_jsd)
 
 
-def Inference(parameters):
+def inference(parameters):
     val_generator = parameters['dataset']
     model = parameters['hybridnets']
     fake_run = parameters['fake_run']
@@ -520,7 +520,7 @@ if __name__ == "__main__":
             logger.info(f'warm_run: {warm_run}')
             logger.info(f'fit_distribution_number: {fit_distribution_number}')
             
-            tmp_inference_dic, tmp_total_dic = Inference(params)
+            tmp_inference_dic, tmp_total_dic = inference(params)
             logger.info(f'after inference')
             if not fake_run:
                 already_run += 1 
